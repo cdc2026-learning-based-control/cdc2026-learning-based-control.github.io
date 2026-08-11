@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC 2026 | Reliable and Collaborative Learning-Based Control</title>
+    <style>
+        :root {
+            --primary: #003366; /* Deep Academic Blue */
+            --secondary: #4682B4; /* Steel Blue */
+            --dark: #333333;
+            --light: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            scroll-margin-top: 60px;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .abstract-text {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .organizer-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .organizer-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 6px;
+            text-align: center;
+            border-top: 4px solid var(--secondary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+        }
+
+/* Forces a perfect 288x288 square frame */
+        .profile-frame {
+            width: 288px;
+            height: 288px;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--primary-color);
+            background-color: #e0e0e0;
+        }
+
+        /* Prevents squishing or stretching by auto-cropping the image */
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        .organizer-card h3 {
+            margin: 0.5rem 0 0.25rem 0;
+            font-size: 1.4rem;
+        }
+
+        .organizer-card h3 a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .organizer-card h3 a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .organizer-card p {
+            margin: 3px 0;
+            font-size: 0.95rem;
+        }
+
+        .organizer-card a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .organizer-card a:hover {
+            text-decoration: underline;
+        }
+
+        .speaker-list {
+            margin-top: 20px;
+        }
+
+        .speaker-item {
+            background: var(--light);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .speaker-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .speaker-affil {
+            color: #666;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        .talk-title {
+            margin-top: 8px;
+            padding-left: 10px;
+            border-left: 3px solid var(--secondary);
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6rem; }
+            nav a { padding: 10px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Reliable and Collaborative Learning-Based Control</h1>
+        <p>Full-Day Workshop at the 65th IEEE Conference on Decision and Control (CDC 2026)</p>
+        <p style="margin-top: 10px; font-size: 1rem; opacity: 0.9;">December 2026 | Milan, Italy</p>
+    </header>
+
+    <nav>
+        <a href="#abstract">Abstract</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#speakers">Speakers</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <div class="abstract-text">
+                <p>Collaborative control is emerging as a compelling new direction within control engineering, bringing ideas long explored in machine learning—such as federated learning, multi-task learning, and shared representation learning—into the analysis and control of dynamical systems. As modern control applications scale to unprecedented levels of complexity—spanning large fleets of interconnected devices, geographically distributed infrastructures, and data-rich cyber-physical systems, the traditional paradigm of centralized learning and control becomes impractical due to data volume, communication constraints, latency, and privacy considerations. Collaboration across agents, tasks, or datasets is therefore not merely advantageous but essential.</p>
+                <p>However, this shift introduces a fundamental performance tradeoff: while increasing the number of agents can improve statistical efficiency and coverage, heterogeneity across agents and tasks can induce bias and degrade control performance, necessitating careful coordination and structure sharing. This workshop aims to position collaborative control as a principled framework that navigates these tradeoffs, touching upon the themes of stability, sample-complexity, robustness, information constraints, and the fundamental implications of sharing data generated by distinct (heterogeneous) systems. By unifying insights from control theory and contemporary machine learning, the goal is to chart a path toward scalable, reliable control methodologies suited to the next generation of complex systems.</p>
+            </div>
+        </section>
+
+            <section id="organizers">
+            <h2>Organizers</h2>
+            <div class="organizer-layout">
+                
+                <div class="organizer-card">
+                    <div class="profile-frame">
+                        <!-- Points directly to your local downloaded file -->
+                        <img src="aritra.jpg" alt="Aritra Mitra Profile Photo">
+                    </div>
+                    <h3>Aritra Mitra</h3>
+                    <p class="title">Assistant Professor</p>
+                    <p class="institution">North Carolina State University</p>
+                    <span class="email">amitra2@ncsu.edu</span>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="profile-frame">
+                        <!-- Points directly to your local downloaded file -->
+                        <img src="james.jpg" alt="James Anderson Profile Photo">
+                    </div>
+                    <h3>James Anderson</h3>
+                    <p class="title">Associate Professor</p>
+                    <p class="institution">Columbia University</p>
+                    <span class="email">james.anderson@columbia.edu</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="speakers">
+            <h2>Tentative List of Speakers</h2>
+            <div class="speaker-list">
+                
+                <div class="speaker-item">
+                    <span class="speaker-name">Leonardo Toso</span> <span class="speaker-affil">— Columbia University</span>
+                    <div class="talk-title">"Generalization Guarantees for Collaborative Control via Meta Learning"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Solmaz Kia</span> <span class="speaker-affil">— UC Irvine</span>
+                    <div class="talk-title">"The Price of Collaboration in Learning-Based Control: Communication, Descent, and Stability"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Sarah Dean</span> <span class="speaker-affil">— Cornell</span>
+                    <div class="talk-title">"Learning and decision making under observer effects"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Charis Stamouli</span> <span class="speaker-affil">— University of Pennsylvania</span>
+                    <div class="talk-title">"Multitask Policy Gradient in Linear Quadratic Control"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Luke Bhan</span> <span class="speaker-affil">— UC San Diego</span>
+                    <div class="talk-title">"Stability Constrained Learning for Distribution Grid Voltage Control With Arbitrary Communication Infrastructure"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Na Li</span> <span class="speaker-affil">— Harvard</span>
+                    <div class="talk-title">"Decentralized Diffusion Policy Learning for Enhanced Exploration in Cooperative Multi-agent Reinforcement Learning"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name text">Chinmay Maheshwari</span> <span class="speaker-affil">— Johns Hopkins</span>
+                    <div class="talk-title">"NePPO: Near-Potential Policy Optimization for General-Sum Multi-Agent Reinforcement Learning"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Thinh Doan</span> <span class="speaker-affil">— UT Austin</span>
+                    <div class="talk-title">"Analyzing Best-Response Dynamics for Cooperation in Markov Potential Games"</div>
+                </div>
+
+                 <div class="speaker-item">
+                    <span class="speaker-name">Pengcheng You</span> <span class="speaker-affil">— Peking University</span>
+                    <div class="talk-title">"Coherency Analysis in Nonlinear Heterogeneous Power Networks: A Blended Dynamics Approach"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Nikolai Matni</span> <span class="speaker-affil">— University of Pennsylvania</span>
+                    <div class="talk-title">"You are training your models and policies wrong!"</div>
+                </div>
+
+                <div class="speaker-item">
+                    <span class="speaker-name">James Anderson</span> <span class="speaker-affil">— Columbia University</span>
+                    <div class="talk-title">"Federated Learning for Optimal Control -- An Introduction"</div>
+                </div>
+
+
+                <div class="speaker-item">
+                    <span class="speaker-name">Aritra Mitra</span> <span class="speaker-affil">— North Carolina State University</span>
+                    <div class="talk-title">"Robust and Collaborative Reinforcement Learning: Algorithms and Fundamental Limits"</div>
+                </div>
+
+
+   
+                
+
+                
+
